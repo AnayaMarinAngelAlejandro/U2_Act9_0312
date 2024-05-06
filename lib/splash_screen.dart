@@ -11,7 +11,7 @@ class SplashScreen extends StatelessWidget {
       body: Column(
         children: [
           splashImage(),
-          Gap(10),
+          const Gap(20),
           title(),
           myButton(),
         ],
@@ -24,6 +24,7 @@ class SplashScreen extends StatelessWidget {
       height: Get.height / 1.4,
       width: Get.width,
       decoration: BoxDecoration(color: Color(0xffF0F4EF)),
+      child: Image.asset("assets/WWE-Logo.png"),
     );
   }
 
@@ -36,6 +37,31 @@ class SplashScreen extends StatelessWidget {
   }
 
   Widget myButton() {
-    return Container();
+    return Container(
+      height: 52,
+      padding: EdgeInsets.symmetric(horizontal: 32.0),
+      decoration: BoxDecoration(
+          color: Color(0xff475E3E), borderRadius: BorderRadius.circular(42)),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const Text("Let's start",
+              style: TextStyle(fontSize: 18, color: Colors.white)),
+          Gap(10),
+          Container(
+              padding: EdgeInsets.all(4.0),
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.white, width: 0.8),
+                shape: BoxShape.circle,
+              ),
+              child: Icon(
+                Icons.arrow_forward_ios_outlined,
+                color: Colors.white,
+                size: 18,
+              ))
+        ],
+      ),
+    );
   }
 }
