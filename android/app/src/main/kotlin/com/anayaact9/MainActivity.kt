@@ -1,0 +1,6 @@
+package com.anayaact9
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
