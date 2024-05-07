@@ -10,7 +10,10 @@ dependencies:
   flutter:
     sdk: flutter
   get:
-  gap:
+  gap: 
+  shape_of_view_null_safe:
+  google_fonts: ^6.2.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
